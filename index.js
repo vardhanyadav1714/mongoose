@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 let express = require('express');
-let enquiryModel = require('./enquiryModel');
+let enquiryModel = require('./enquirymodel');
 let app = express();
 
 app.use(express.json()); // IMPORTANT: Keep this before routes
@@ -64,3 +64,4 @@ mongoose.connect("mongodb://localhost:27017/enquiryDB")
         });
     })
     .catch(err => console.log(err));
+
